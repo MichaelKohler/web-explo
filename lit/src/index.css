@@ -32,6 +32,16 @@ body {
   min-height: 100vh;
 }
 
+/* Adjusting style from web component does not work!
+   However it is possible to use a CSS variable
+   and allow it on the Web Component */
+my-element a {
+  text-transform: uppercase !important;
+}
+:root {
+  --text-transform-value: uppercase;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

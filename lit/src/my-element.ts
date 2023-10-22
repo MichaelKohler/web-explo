@@ -93,6 +93,8 @@ export class MyElement extends LitElement {
       font-weight: 500;
       color: #646cff;
       text-decoration: inherit;
+      /* This allows us to style it from the outside */
+      text-transform: var(--text-transform-value);
     }
     a:hover {
       color: #f2ca53;
