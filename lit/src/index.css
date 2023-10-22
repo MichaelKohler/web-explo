@@ -42,6 +42,11 @@ my-element a {
   --text-transform-value: uppercase;
 }
 
+/* It is also possible to style the slotted elements */
+h1[slot="title"] {
+  color: deeppink;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
