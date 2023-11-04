@@ -7,3 +7,4 @@ Random explorations for Web APIs and concepts. This can be just running an "star
 * `lit`: general explorations of some of `lit`'s concepts. Using `vite`.
 * `lit-js-only`: wondered how it would look like to boostrap `lit` with JS only. Also using `vite`. No custom changes here.
 * `remix-vite`: simple test of the vite integration of remix. No custom changes here.`
+* `web-worker-origin-private-file-system`: example using the Origin Private File System through Web Workers
