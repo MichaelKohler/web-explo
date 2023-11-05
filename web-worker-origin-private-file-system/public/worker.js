@@ -32,7 +32,9 @@ const handleMessage = async (message) => {
 const readFullFile = () => {
   const size = accessHandle.getSize()
   const dataView = new DataView(new ArrayBuffer(size))
-  accessHandle.read(dataView)
+  // We always want to read from the start of the file,
+  // otherwise the cursor will not be at the right position
+  accessHandle.read(dataView, { at: 0 })
   const textDecoder = new TextDecoder();
   const decoded = textDecoder.decode(dataView)
   return decoded
